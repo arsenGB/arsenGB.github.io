@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Portfolio</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="magnify.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(window).on('scroll', function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('white');
+			}else{
+				$('nav').removeClass('white');
+			}
+		})
+	</script>
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+			<a href="#home"><img src="img/logo.png" class="logoEffect"></a>
+		</div>
+		<ul class="nav-list" id="navi-list">
+			<li class="list-item"><a href="#home" class="active">HOME</a></li>
+			<li class="list-item"><a href="#info">PERSONAL INFO</a></li>
+			<li class="list-item"><a href="#education">EDUCATION</a></li>
+			<li class="list-item"><a href="#certificates">CERTIFICATES</a></li>
+			<li class="list-item"><a href="#webinars">WEBINARS</a></li>
+		</ul>
+		<div class="menu" id="toggle-button">
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+		</div>
+	</nav>
+
+	<script>
+		const toggleButton = document.getElementById('toggle-button');
+		const naviList = document.getElementById('navi-list');
+			
+		toggleButton.addEventListener('click', () => {
+				naviList.classList.toggle('active');
+		})
+	</script>
+
+	<div class="home-area" id="home">
+		<div class="row1">
+			<div class="col1">
+				<h1>Renz Ivan Dela Cruz</h1><br>
+				<h2>Hi! You can call me Renz.</h2>
+				<p>I'm a Computer Engineering student at Don Honorio Ventura University, currently at my fourth and last school year. I have experiences on computer-related areas involving software and hardware programming (C++, Java, PHP, Python), web development, networking, and electronics. </p><br><br>
+				<a href="#contact">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					For inquiries
+				</a>
+			</div>
+			<div class="col1">
+				<img src="img/formalPic.png" class="pic1">
+			</div>
+		</div>
+	</div>
+
+	<div class="info-area" id="info">
+		<div class="row2">
+			<div class="col2">
+				<img src="img/statusBG.png" class="pic2">
+			</div>
+			<div class="col2">
+				<ul>
+					<h1>PERSONAL INFO</h1><br>
+					<li>Age: 21</li>
+					<li>Birthday: February 27, 2000</li>
+					<li>Gender: Male</li>
+					<li>Nationality: Filipino</li>
+					<li>Religion: R/C</li>
+					<li>Civil Status: Single</li>
+					<li>Address: Apalit, Pampanga</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="education-area" id="education">
+
+	</div>
+
+	<script src="jquery.magnify.js"></script>
+	<script>
+		$(document).ready(function() {
+  			$('.zoom').magnify();
+		});
+	</script>
+
+	<div class="certificates-area" id="certificates">
+		<div class="certs">
+			<h1>CERTIFICATES</h1>
+			<img src="./img/cert1.png" id="cert1" class="zoom" data-magnify-src="img/cert1-large.png">
+			<img src="img/cert2.png" id="cert2" class="zoom" data-magnify-src="img/cert2-large.png">
+			<img src="img/cert3.png" id="cert3" class="zoom" data-magnify-src="img/cert3-large.png">
+			<img src="img/cert4.png" id="cert4" class="zoom" data-magnify-src="img/cert4-large.png">
+			<img src="img/cert5.png" id="cert5" class="zoom" data-magnify-src="img/cert5-large.png">
+		</div>
+	</div>
+
+	<div class="webinars-area" id="webinars">
+		<div class="webinars">
+			<h1>WEBINARS</h1>
+			<img src="img/webinars.png">
+		</div>
+	</div>
+
+	<div class="contact-area" id="contact">
+		<div class="wrapper">
+			<div class="button">
+				<div class="icon"><img src="img/fb.png">
+				</div>
+				<span>Dela Cruz Renz</span>
+			</div>
+			<div class="button">
+				<div class="icon"><img src="img/twitter.png">
+				</div>
+				<span>@AngraMainyu20</span>
+			</div>
+			<div class="button">
+				<div class="icon"><img src="img/gmail.png">
+				</div>
+				<span>philbadhere@gmail.com</span>
+			</div>
+			<div class="button">
+				<div class="icon"><img src="img/phone.png">
+				</div>
+				<span>+639162732016</span>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html
