@@ -166,8 +166,10 @@ nav.white .menu-line{
 }
 .pic1{
 	height: 400px;
-	display: inline-block;
+	display: block;
 	padding-left: 150px;
+	margin-left: auto;
+ 	margin-right: auto;
 }
 .pic1:hover{
 	transform: scale(1.25);
@@ -187,10 +189,21 @@ nav.white .menu-line{
 	height: 88%;
 	align-items: center;
 }
-.col2 p{
+.col2{
+	flex-basis: 50%;
+	text-align: center;
+}
+.col2 ul{
+	display: inline-block;
+	text-align: left;
+	list-style: none;
+}
+.col2 ul li{
+	text-decoration: none;
 	color: white;
-	font-size: 18px;
+	font-size: 20px;
 	font-family: 'Verdana';
+	padding: 10px 0;
 }
 .pic2{
 	padding-top: 150px;
