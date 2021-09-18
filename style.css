@@ -1495,9 +1495,16 @@ p{
 
 @media all and (max-width : 480px){
 	nav{
-		padding-right: 60px;
-		height: 50px;
-		flex-direction: column;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		padding: 10px 70px;
+		box-sizing: border-box;
+		transition: .5s;
+		background-color: rgba(16, 14, 14, .2);
+		z-index: 100;
 	}
 	nav ul li a{
 		font-size: 10px;
@@ -1507,11 +1514,11 @@ p{
 		background: none;
 	}
 	nav .logo img{
-		height: 35px;
+		height: 30px;
 		padding-top: 1px;
 	}
 	nav.white{
-		padding-right: 5px;
+		padding: 10px 10px;
 		height: 50px;
 	}
 	nav.white ul li a{
@@ -1522,13 +1529,11 @@ p{
 	nav.white .logo img{
 		height: 25px;
 	}
-
-	
 	.menu{
 		display: block;
-		padding: 2px 45px;
+		padding: 2px 62px;
 		position: absolute;
-		right: 25px;
+		right: 10px;
 		top: 15px;
 	}
 	.nav-list{
@@ -1544,5 +1549,315 @@ p{
 	.active{
 		display: block;
 	}
+	
+    
+	.home-area{
+	    position: relative;
+	    width: 100%;
+	    height: 60vh;
+	}
+	.row1{
+	    padding-left: 8%;
+	    padding-right: 8%;
+	    display: flex;
+	    height: 100%;
+	    align-items: center;
+	}
+	.col1 h1{
+	    color: white;
+	    font-size: 18px;
+	    font-family: 'Tahoma';
+	}
+	.col1 h2{
+	    color: white;
+	    font-size: 11px;
+	    font-family: 'Tahoma';
+	    font-style: italic;
+	}
+	.col1 p{
+	    color: rgba(255,255,255,.6);
+	    font-size: 9px;
+	    font-family: 'Verdana';
+	}
+	.col1 a{
+		position: relative;
+		display: inline-block;
+		color: rgb(8, 247, 254);
+		letter-spacing: 4px;
+		text-decoration: none;
+		padding: 11px 15px;
+		overflow: hidden;
+		margin-top: 0;
+		transition: .2s;
+		font-family: 'Arial';
+		font-size: 10px;
+		border: 2px solid cyan;
+		z-index: 1;
+	}
+	.col1 a:hover{
+		color: black;
+		background: rgb(8, 247, 254);
+		box-shadow: 0 0 10px rgb(8, 247, 254), 0 0 40px rgb(8, 247, 254), 0 0 80px rgb(8, 247, 254)
+	}
+
+	.pic1{
+	    height: 130px;
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+
+	.info-area{
+	    position: relative;
+	    width: 100%;
+	    height: 50vh;
+	}
+	.row2{
+	    padding-left: 8%;
+	    padding-right: 8%;
+	    display: flex;
+	    height: 100%;
+	    align-items: center;
+	}
+	.col2{
+	    flex-basis: 50%;
+	    text-align: center;
+	}
+	.col2 h1{
+	    font-size: 14px;
+	    font-family: Tahoma;
+	}
+
+	.col2 ul{
+	    display: inline-block;
+	    text-align: left;
+	    list-style: none;
+	}
+	.col2 ul li{
+	    text-decoration: none;
+	    color: white;
+	    font-size: 11px;
+	    font-family: 'Verdana';
+	    padding: 5px 0;
+	}
+	.pic2{
+	    padding-top: 35px;
+	    height: 150px;
+	    display: inline-block;
+	    opacity: 50%;
+	    filter:drop-shadow(5px 7px 25px black);
+	}
+
+
+	.education-area{
+		position: relative;
+		width: 100%;
+		height: 60vh;
+	}
+	.education-area h1{
+		position: relative;
+		text-align: center;
+		font-family: 'Tahoma';
+		font-size: 14px;
+		top: 12%
+	}
+	.container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 60vh;
+		flex-wrap: nowrap;
+		overflow: hidden;
+	}
+	.card{
+		overflow: hidden;
+		background: white;
+		min-height: 210px;
+		max-height: 210px;
+		width: 90px;
+		margin: 2%;
+		border: 5px solid white;
+		border-style: outset;
+		border-radius: 15px;
+		filter:drop-shadow(3px 3px 5px cyan);
+	}
+	.card:hover{
+		transform: scale(1.1);
+		filter:drop-shadow(12px 7px 10px cyan);
+		transition: .75s ease-in-out;
+	}
+	.card-image{
+		background-color: cyan;
+		height: 70px;
+		margin-bottom: 15px;
+		background-size: cover;
+		border-radius: 15px;
+	}
+	.card h1{
+		font-family: 'Tahoma';
+		color: black;
+		font-size: 10px;
+		text-align: center;
+	}
+	.card p{
+		text-align: center;
+		font-family: 'Verdana';
+		font-size: 6px;
+		color: black;
+	}
+	.card a{
+		background-color: rgba(0,0,0,.9);
+		display: block;
+		text-align: center;
+		margin: 0 20px;
+		padding: 10px 12px;
+		font-size: 9px;
+		border-radius: 10px;
+	}
+	.card a:hover{
+		background-color: gray; 
+		color: white;
+		transition: .5s ease-in-out;
+	}
+
+
+	.certificates-area h1{
+	    font-size: 14px;
+	}
+	.certificates-area{
+	    position: relative;
+	    width: 100%;
+	    height: 60vh;
+	    text-align: center;
+	}
+	.certs{
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin-right: -50%;
+	    transform: translate(-50%, -50%);
+	}
+	#cert1,#cert2,#cert3,#cert4,#cert5{
+		display: inline-block;
+		height: 100px;
+		border: 2px solid white;
+		border-radius: 5px;
+		transition: .3s ease-in-out;
+	}
+
+
+	.webinars-area{
+	    position: relative;
+	    width: 100%;
+	    height: 60vh;
+	}
+	.webinars{
+	    position: absolute;
+	    margin: auto;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+	.webinars h1{
+	    position: relative;
+	    text-align: center;
+	    font-family: 'Tahoma';
+	    font-size: 12px;
+	}
+	.webinars img{
+	    height: 280px;
+	}
+	.webinars img:hover{
+	    filter:drop-shadow(0 0 20px rgb(8, 247, 254));
+	    transition: 1s;
+	}
+
+
+	.contact-area{
+		position: relative;
+		width: 100%;
+		height: 60vh;
+	}
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	  	height: 100%;
+	  	width: 100%;
+	  	place-items: center;
+	  	z-index: 1;
+	}
+	.wrapper .button{
+		display: inline-block;
+	  	height: 40px;
+	  	width: 40px;
+	  	float: left;
+	  	margin: 10px 5px;
+	  	overflow: hidden;
+	  	background: #fff;
+	  	border-radius: 50px;
+	  	box-shadow: 5px 7px 10px rgba(8, 247, 254,.5);
+	  	transition: all 0.3s ease-out;
+	}
+	.wrapper .button:hover{
+	  	width: 250px;
+	}
+	.wrapper .button .icon{
+	  	display: inline-block;
+	  	height: 40px;
+	  	width: 40px;
+	  	text-align: center;
+	 	border-radius: 50px;
+	  	box-sizing: border-box;
+	  	line-height: 40px;
+	  	transition: all 0.3s ease-out;
+	}
+	.wrapper .button:nth-child(1):hover .icon{
+	  	background: #4267B2;
+	}
+	.wrapper .button:nth-child(2):hover .icon{
+	  	background: #1DA1F2;
+	}
+	.wrapper .button:nth-child(3):hover .icon{
+	  	background: #E1306C;
+	}
+	.wrapper .button:nth-child(4):hover .icon{
+	  	background: #ff0000;
+	}
+	.wrapper .button .icon img{
+		height: 25px;
+		vertical-align: middle;
+	}
+	.wrapper .button .icon i{
+	  	font-size: 12px;
+	  	line-height: 40px;
+	  	transition: all 0.3s ease-out;
+	}
+	.wrapper .button:hover .icon i{
+	  	color: #fff;
+	}
+	.wrapper .button span{
+	  	font-size: 16px;
+	  	font-weight: 500;
+	  	line-height: 40px;
+	  	margin-left: 10px;
+	  	justify-content: center;
+	  	align-items: center;
+	  	text-align: center;
+	  	transition: all 0.3s ease-out;
+	}
+	.wrapper .button:nth-child(1) span{
+	  	color: #4267B2;
+	}
+	.wrapper .button:nth-child(2) span{
+	  	color: #1DA1F2;
+	}
+	.wrapper .button:nth-child(3) span{
+	  	color: #E1306C;
+	}
+	.wrapper .button:nth-child(4) span{
+	  	color: #ff0000;
+	}	
 }
 
