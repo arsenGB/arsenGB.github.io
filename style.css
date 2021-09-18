@@ -1,6 +1,16 @@
 html{
 	scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-thumb{
+	background: rgba(255,255,255,.5);
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: rgb(8, 247, 254, .9);
+}
 body{
 	margin: 0;
 	padding: 0;
@@ -1135,6 +1145,9 @@ p{
 }
 
 @media all and (min-width : 481px) and (max-width : 768px){
+	::-webkit-scrollbar{
+		width: 0px;
+	}
     nav{
 		padding-right: 60px;
 		height: 50px;
@@ -1494,6 +1507,9 @@ p{
 }
 
 @media all and (max-width : 480px){
+	::-webkit-scrollbar{
+		width: 0px;
+	}
 	nav{
 		position: fixed;
 		top: 0;
