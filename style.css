@@ -316,7 +316,7 @@ nav.white .menu-line{
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
-#cert1,#cert2,#cert3,#cert4,#cert5{
+#cert1,#cert2,#cert3,#cert4,#cert5,#cert6{
 	display: inline-block;
 	height: 250px;
 	border: 2px solid white;
@@ -766,7 +766,7 @@ p{
 		font-family: 'Tahoma';
 		font-size: 40px;
 	}
-	#cert1,#cert2,#cert3,#cert4,#cert5{
+	#cert1,#cert2,#cert3,#cert4,#cert5,#cert6{
 		display: inline-block;
 		height: 170px;
 		border: 2px solid white;
@@ -1109,7 +1109,7 @@ p{
 	    margin-right: -50%;
 	    transform: translate(-50%, -50%);
 	}
-	#cert1,#cert2,#cert3,#cert4,#cert5{
+	#cert1,#cert2,#cert3,#cert4,#cert5,#cert6{
 		display: inline-block;
 		height: 140px;
 		border: 2px solid white;
@@ -1175,6 +1175,15 @@ p{
 	}
 	nav.white .logo img{
 		height: 25px;
+	}
+	nav.white .menu{
+		right: -40px;
+		transition: .5s;
+	}
+
+	nav.white .menu-line{
+		height: 1px;
+		transition: .5s;
 	}
 	.menu{
 		display: block;
@@ -1384,7 +1393,7 @@ p{
 	    margin-right: -50%;
 	    transform: translate(-50%, -50%);
 	}
-	#cert1,#cert2,#cert3,#cert4,#cert5{
+	#cert1,#cert2,#cert3,#cert4,#cert5,#cert6{
 		display: inline-block;
 		height: 140px;
 		border: 2px solid white;
@@ -1754,7 +1763,7 @@ p{
 	    margin-right: -50%;
 	    transform: translate(-50%, -50%);
 	}
-	#cert1,#cert2,#cert3,#cert4,#cert5{
+	#cert1,#cert2,#cert3,#cert4,#cert5,#cert6{
 		display: inline-block;
 		height: 100px;
 		border: 2px solid white;
