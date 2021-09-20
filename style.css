@@ -446,6 +446,56 @@ p{
 }
 
 
+@media all and (min-height: 480px) and (max-height: 800px){
+	.certificates-area{
+		position: relative;
+		width: 100%;
+		height: 130vh;
+		text-align: center;
+	}
+	.certs{
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin-right: -50%;
+	    transform: translate(-50%, -50%);
+	}
+	#cert1,#cert2,#cert3,#cert4,#cert5,#cert6{
+		display: inline-block;
+		height: 200px;
+		border: 2px solid white;
+		border-radius: 5px;
+		transition: .3s ease-in-out;
+	}
+
+
+	.webinars-area{
+		position: relative;
+		width: 100%;
+		height: 100vh;
+	}
+	.webinars{
+		position: absolute;
+		margin: auto;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.webinars h1{
+		position: relative;
+		text-align: center;
+		font-family: 'Tahoma';
+		font-size: 60px;
+	}
+	.webinars img{
+		height: 400px;
+	}
+	.webinars img:hover{
+		filter:drop-shadow(0 0 20px rgb(8, 247, 254));
+		transition: 1s;
+	}
+}
+
 @media all and (min-width : 1025px) and (max-width : 1200px){
 	html{
 	scroll-behavior: smooth;
